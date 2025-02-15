@@ -1,6 +1,23 @@
-import { Socials } from "@/contents";
 import Image from "next/image";
 import React from "react";
+
+const Socials = [
+	{
+		name: "LinkedIn",
+		src: "/linkedin.svg",
+		link: "https://www.linkedin.com/in/dundi/",
+	},
+	{
+		name: "Email",
+		src: "/mail.svg",
+		link: "mailto:dundi@umich.edu",
+	},
+	{
+		name: "GitHub",
+		src: "/gitwhite.png", // Update with the actual path to your icon
+		link: "https://github.com/dundi126",
+	},
+];
 
 const Navbar = () => {
 	return (
@@ -27,32 +44,33 @@ const Navbar = () => {
 							Home
 						</a>
 						<a
-							href="#projects"
-							className="cursour-pointer transition duration-500 ease-in-out hover:scale-125">
-							Projects
-						</a>
-						<a
 							href="#skills"
 							className="cursour-pointer transition duration-500 ease-in-out hover:scale-125">
 							Skills
 						</a>
 						<a
-							href="#contact"
+							href="#projects"
 							className="cursour-pointer transition duration-500 ease-in-out hover:scale-125">
-							Contact
+							Projects
 						</a>
 					</div>
 				</div>
 
 				<div className="flex flex-row gap-5">
 					{Socials.map((social) => (
-						<Image
-							src={social.src}
-							alt={social.name}
+						<a
 							key={social.name}
-							width={40}
-							height={40}
-						/>
+							href={social.link}
+							target="_blank"
+							rel="noopener noreferrer"
+							className="hover:opacity-80 transition-opacity duration-300">
+							<Image
+								src={social.src}
+								alt={social.name}
+								width={40}
+								height={40}
+							/>
+						</a>
 					))}
 				</div>
 			</div>

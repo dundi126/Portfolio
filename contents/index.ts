@@ -36,35 +36,12 @@ export const Skill_data = [
 		height: 80,
 	},
 	{
-		skill_name: "React Query",
-		Image: "/reactquery.png",
-		width: 80,
-		height: 80,
-	},
-	{
-		skill_name: "Type Script",
-		Image: "/ts.png",
-		width: 80,
-		height: 80,
-	},
-	{
 		skill_name: "Next js 13",
 		Image: "/next.png",
 		width: 80,
 		height: 80,
 	},
-	{
-		skill_name: "Framer Motion",
-		Image: "/framer.png",
-		width: 80,
-		height: 80,
-	},
-	{
-		skill_name: "Stripe Payment",
-		Image: "/stripe.webp",
-		width: 80,
-		height: 80,
-	},
+
 	{
 		skill_name: "Node js",
 		Image: "/node-js.png",
@@ -79,43 +56,22 @@ export const Skill_data = [
 	},
 ];
 
-export const Socials = [
-	{
-		name: "Discord",
-		src: "/instagram.svg",
-	},
-	{
-		name: "Facebook",
-		src: "/facebook.svg",
-	},
-	{
-		name: "Instagram",
-		src: "/discord.svg",
-	},
-];
-
 export const Frontend_skill = [
 	{
-		skill_name: "Html 5",
-		Image: "/html.png",
-		width: 80,
-		height: 80,
-	},
-	{
-		skill_name: "Css",
-		Image: "/css.png",
-		width: 80,
-		height: 80,
-	},
-	{
-		skill_name: "Java Script",
-		Image: "/js.png",
+		skill_name: "C++",
+		Image: "/c.svg",
 		width: 65,
 		height: 65,
 	},
 	{
-		skill_name: "Tailwind Css",
-		Image: "/tailwind.png",
+		skill_name: "Python",
+		Image: "/python-5.svg",
+		width: 80,
+		height: 80,
+	},
+	{
+		skill_name: "java",
+		Image: "/java-4.svg",
 		width: 80,
 		height: 80,
 	},
@@ -126,32 +82,21 @@ export const Frontend_skill = [
 		height: 80,
 	},
 	{
-		skill_name: "React",
-		Image: "/react.png",
+		skill_name: "Three js",
+		Image: "/threejs-1.svg",
 		width: 80,
 		height: 80,
 	},
 	{
-		skill_name: "Redux",
-		Image: "/redux.png",
+		skill_name: "Bootstrap",
+		Image: "/bootstrap-5-1.svg",
 		width: 80,
 		height: 80,
 	},
-	{
-		skill_name: "React Query",
-		Image: "/reactquery.png",
-		width: 80,
-		height: 80,
-	},
+
 	{
 		skill_name: "Type Script",
 		Image: "/ts.png",
-		width: 80,
-		height: 80,
-	},
-	{
-		skill_name: "Next js 13",
-		Image: "/next.png",
 		width: 80,
 		height: 80,
 	},
@@ -164,12 +109,7 @@ export const Backend_skill = [
 		width: 80,
 		height: 80,
 	},
-	{
-		skill_name: "Express js",
-		Image: "/express.png",
-		width: 80,
-		height: 80,
-	},
+
 	{
 		skill_name: "Mongo db",
 		Image: "/mongodb.png",
@@ -195,16 +135,10 @@ export const Backend_skill = [
 		height: 70,
 	},
 	{
-		skill_name: "Prisma",
-		Image: "/prisma.webp",
+		skill_name: "Auth JS",
+		Image: "/logo-sm.png",
 		width: 70,
 		height: 70,
-	},
-	{
-		skill_name: "Graphql",
-		Image: "/graphql.png",
-		width: 80,
-		height: 80,
 	},
 ];
 
@@ -226,9 +160,36 @@ export const Full_stack = [
 
 export const Other_skill = [
 	{
-		skill_name: "Go",
-		Image: "/go.png",
-		width: 60,
-		height: 60,
+		skill_name: "Vercel",
+		Image: "/vercel.png",
+		width: 50,
+		height: 50,
+	},
+];
+
+export const project = [
+	{
+		src: "/SpaceWebsite.png",
+		title: "startup hub",
+		description:
+			"An AI-powered system for real-time vehicle license plate detection using OCR",
+	},
+	{
+		src: "/SpaceWebsite.png",
+		title: "startup hub",
+		description:
+			"An AI-powered system for real-time vehicle license plate detection using OCR",
+	},
+	{
+		src: "/SpaceWebsite.png",
+		title: "startup hub",
+		description:
+			"An AI-powered system for real-time vehicle license plate detection using OCR",
+	},
+	{
+		src: "/SpaceWebsite.png",
+		title: "startup hub",
+		description:
+			"An AI-powered system for real-time vehicle license plate detection using OCR",
 	},
 ];

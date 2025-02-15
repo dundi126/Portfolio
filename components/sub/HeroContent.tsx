@@ -6,6 +6,9 @@ import { slideInFromLeft, slideInFromRight } from "@/utils/motion";
 import Image from "next/image";
 
 const HeroContent = () => {
+	const handleClick = () => {
+		console.log("handle click");
+	};
 	return (
 		<motion.div
 			initial="hidden"
@@ -16,10 +19,13 @@ const HeroContent = () => {
 					variants={slideInFromLeft(0.5)}
 					className="flex flex-col gap-6 mt-6 text-5xl font-bold text-white max-w-[600px] w-auto h-auto">
 					<span>
-						I&apos;m
+						Hi, I&apos;m
 						<span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
 							{" "}
-							Dundi Vignesh{" "}
+							Dundi Vignesh!{" "}
+						</span>
+						<span className="text-xl font-semibold">
+							Software Developer | AI Enthusiast
 						</span>
 					</span>
 				</motion.div>
@@ -27,11 +33,14 @@ const HeroContent = () => {
 				<motion.p
 					variants={slideInFromLeft(0.8)}
 					className="text-xl text-gray-400 my-5 max-w-[600px]">
-					I&apos;m a Student at University Of Michigan. Also, a Software
-					Engineer with experience in Website, Mobile, and Software development.
+					A University of Michigan student Passionate about web development, AI,
+					and creating innovative solutions.
 				</motion.p>
 				<motion.a
 					variants={slideInFromLeft(1)}
+					href="https://drive.google.com/file/d/1wFAwXN42hlJQe90jbC_bQm4V3bP3hWCP/view?usp=share_link" // Replace with your actual resume link
+					target="_blank"
+					rel="noopener noreferrer"
 					className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]">
 					Learn More!
 				</motion.a>
