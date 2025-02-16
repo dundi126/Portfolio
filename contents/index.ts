@@ -171,6 +171,15 @@ export const project = [
 	{
 		src: "/SpaceWebsite.png",
 		title: "startup hub",
+		tools: "/vercel.png,/vercel.png,/vercel.png",
+		description:
+			"An AI-powered system for real-time vehicle license plate detection using OCR",
+	},
+	{
+		src: "/SpaceWebsite.png",
+		title: "startup hub",
+		tools: "/vercel.png,/vercel.png,/vercel.png",
+
 		description:
 			"An AI-powered system for real-time vehicle license plate detection using OCR",
 	},
@@ -179,17 +188,13 @@ export const project = [
 		title: "startup hub",
 		description:
 			"An AI-powered system for real-time vehicle license plate detection using OCR",
+		tools: "/vercel.png,/vercel.png,/vercel.png",
 	},
 	{
 		src: "/SpaceWebsite.png",
 		title: "startup hub",
 		description:
 			"An AI-powered system for real-time vehicle license plate detection using OCR",
-	},
-	{
-		src: "/SpaceWebsite.png",
-		title: "startup hub",
-		description:
-			"An AI-powered system for real-time vehicle license plate detection using OCR",
+		tools: "/vercel.png,/vercel.png,/vercel.png",
 	},
 ];
