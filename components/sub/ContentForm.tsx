@@ -1,8 +1,11 @@
 "use client";
 
-import React, { useRef, useState, ChangeEvent, FormEvent } from "react";
+import React, { useRef, ChangeEvent, FormEvent } from "react";
+import { useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 // Define the form state type
 interface FormState {
@@ -15,14 +18,13 @@ const ContentForm = () => {
 	const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!;
 	const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!;
 	const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!;
-
+	const [loading, setLoading] = useState<boolean>(false);
 	const formRef = useRef<HTMLFormElement>(null);
 	const [form, setForm] = useState<FormState>({
 		name: "",
 		email: "",
 		message: "",
 	});
-	const [loading, setLoading] = useState<boolean>(false);
 
 	// Handle input changes
 	const handleChange = (
@@ -45,18 +47,16 @@ const ContentForm = () => {
 		};
 
 		emailjs
-			emailjs
-				.sendForm(serviceId, templateId, formRef.current!, publicKey)
-				.then(() => {
-					setLoading(false);
-					alert("Message sent successfully!");
-					setForm({ name: "", email: "", message: "" }); // Reset form
-				})
-				.catch((error) => {
-					setLoading(false);
-					console.error("Email sending error:", error);
-					alert("Failed to send message. Please try again later.");
-				});
+			.sendForm(serviceId, templateId, formRef.current!, publicKey)
+			.then(() => {
+				setLoading(false);
+				window.alert("Email sent successfully!");
+				setForm({ name: "", email: "", message: "" }); // Reset form
+			})
+			.catch((error) => {
+				setLoading(false);
+				window.alert("Failed error occured");
+			});
 	};
 
 	return (

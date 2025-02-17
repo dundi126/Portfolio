@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import EarthCanvas from "../canvas/Earth";
 import { slideInFromLeft } from "@/utils/motion";
 import ContentForm from "../sub/ContentForm";
+import { ToastContainer, toast } from "react-toastify";
 
 interface FormState {
 	name: string;
@@ -28,32 +29,8 @@ const Contact: React.FC = () => {
 		setForm({ ...form, [e.target.name]: e.target.value });
 	};
 
-	const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
-		e.preventDefault();
-		setLoading(true);
-
-		emailjs
-			.sendForm(
-				"your_service_id", // Replace with your actual Service ID
-				"your_template_id", // Replace with your actual Template ID
-				formRef.current!,
-				"your_public_key" // Replace with your actual Public Key
-			)
-			.then(() => {
-				setLoading(false);
-				alert("Message sent successfully!");
-				setForm({ name: "", email: "", message: "" }); // Reset form
-			})
-			.catch((error) => {
-				setLoading(false);
-				console.error("Email sending error:", error);
-				alert("Failed to send message. Please try again later.");
-			});
-	};
-
 	return (
-		<div className="xl:mt-12 flex xl:flex-row flex-col-reverse justify-center ml-20 gap-10 overflow-hidden z-[100]">
-			{/* Contact Form Section */}
+		<div className="xl:mt-12 flex xl:flex-row flex-col-reverse justify-center ml-20 gap-10 overflow-hidden z-[99]">
 			<motion.div
 				variants={slideInFromLeft(0.2)}
 				className="flex-[0.75] bg-black-100 p-8 rounded-2xl">
@@ -64,7 +41,6 @@ const Contact: React.FC = () => {
 					Contact.
 				</h3>
 
-				{/* Ensure Form is Inside the Motion Div */}
 				<ContentForm />
 			</motion.div>
 

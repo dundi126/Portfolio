@@ -3,6 +3,7 @@ import { Content, Inter } from "next/font/google";
 import "./globals.css";
 import StarsCanvas from "@/components/main/StarBackground";
 import Contact from "@/components/main/Contact";
+import { Suspense } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
