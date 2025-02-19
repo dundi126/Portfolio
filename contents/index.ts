@@ -199,7 +199,7 @@ export const project = [
 		src: "/projects/portfolio.png",
 		title: "Portfolio",
 		description:
-			"AI-powered car simulation using Python, the NEAT algorithm, and Pygame. The goal of the simulation is to demonstrate how neural networks and genetic algorithms can train a car to navigate a track autonomously.",
-		tools: ["/python-5.svg", "/pygame_logo.gif"],
+			"This portfolio showcases projects and skills with a space-themed aesthetic. Built with modern web technologies, it ensures performance, and maintainability using TypeScript.",
+		tools: ["/nextjs.svg", "/ts.png", "/tailwind.png"],
 	},
 ];
