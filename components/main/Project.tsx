@@ -6,12 +6,12 @@ const Projects = () => {
 	return (
 		<section>
 			<div
-				className="flex flex-col items-center justify-center py-20 sticky"
+				className="flex flex-col items-center justify-center py-20  sticky"
 				id="projects">
-				<h1 className="text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-20 sticky top-[100px]">
+				<h1 className="text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 mt-5 mb-10 sticky top-[100px]">
 					My Projects
 				</h1>
-				<div className="h-auto w-[1500px] flex flex-col md:grid-cols-3 gap-10 px-10 sticky ">
+				<div className="h-auto w-auto flex flex-col md:grid-cols-3 gap-52 px-10 sticky ">
 					{project.map((data, index) => (
 						<ProjectCard
 							key={index}

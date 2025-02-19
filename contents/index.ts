@@ -37,7 +37,7 @@ export const Skill_data = [
 	},
 	{
 		skill_name: "Next js 13",
-		Image: "/next.png",
+		Image: "/nextjs.svg",
 		width: 80,
 		height: 80,
 	},
@@ -156,6 +156,12 @@ export const Full_stack = [
 		width: 50,
 		height: 50,
 	},
+	{
+		skill_name: "Git",
+		Image: "/git.svg",
+		width: 70,
+		height: 70,
+	},
 ];
 
 export const Other_skill = [
@@ -169,32 +175,31 @@ export const Other_skill = [
 
 export const project = [
 	{
-		src: "/SpaceWebsite.png",
-		title: "startup hub",
-		tools: "/vercel.png,/vercel.png,/vercel.png",
+		src: "/projects/eatfit.png",
+		title: "EatFit",
 		description:
-			"An AI-powered system for real-time vehicle license plate detection using OCR",
+			"Eatfit is a full-stack web application designed for managing fine-dining restaurant services. It includes a user-friendly frontend, an admin panel, and a robust backend to handle operations efficiently.",
+		tools: ["/react.png", "/nodejs-icon.svg", "/MongoDB.svg"],
 	},
 	{
-		src: "/SpaceWebsite.png",
-		title: "startup hub",
-		tools: "/vercel.png,/vercel.png,/vercel.png",
-
+		src: "/projects/grenich.png",
+		title: "Greniht",
 		description:
-			"An AI-powered system for real-time vehicle license plate detection using OCR",
+			"Gerícht Restaurant is a modern and dynamic restaurant web application that showcases menu items, promotional videos, and a sleek user experience. Built with React, it leverages tools like React Icons and Video.js for a visually appealing and functional interface.",
+		tools: ["/react.png", "/js.png"],
 	},
 	{
-		src: "/SpaceWebsite.png",
-		title: "startup hub",
+		src: "/projects/ai-car-simulation.png",
+		title: "AI Car Simulation",
 		description:
-			"An AI-powered system for real-time vehicle license plate detection using OCR",
-		tools: "/vercel.png,/vercel.png,/vercel.png",
+			"AI-powered car simulation using Python, the NEAT algorithm, and Pygame. The goal of the simulation is to demonstrate how neural networks and genetic algorithms can train a car to navigate a track autonomously.",
+		tools: ["/python-5.svg", "/pygame_logo.gif"],
 	},
 	{
-		src: "/SpaceWebsite.png",
-		title: "startup hub",
+		src: "/projects/portfolio.png",
+		title: "Portfolio",
 		description:
-			"An AI-powered system for real-time vehicle license plate detection using OCR",
-		tools: "/vercel.png,/vercel.png,/vercel.png",
+			"AI-powered car simulation using Python, the NEAT algorithm, and Pygame. The goal of the simulation is to demonstrate how neural networks and genetic algorithms can train a car to navigate a track autonomously.",
+		tools: ["/python-5.svg", "/pygame_logo.gif"],
 	},
 ];

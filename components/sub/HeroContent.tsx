@@ -33,8 +33,10 @@ const HeroContent = () => {
 				<motion.p
 					variants={slideInFromLeft(0.8)}
 					className="text-xl text-gray-400 my-5 max-w-[600px]">
-					A University of Michigan student Passionate about web development, AI,
-					and creating innovative solutions.
+					Currently a student at the University of Michigan, I am deeply
+					interested in AI development, web technologies, and software
+					engineering. Always eager to learn, experiment, and build impactful
+					solutions.
 				</motion.p>
 				<motion.a
 					variants={slideInFromLeft(1)}

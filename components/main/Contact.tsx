@@ -30,7 +30,9 @@ const Contact: React.FC = () => {
 	};
 
 	return (
-		<div className="xl:mt-12 flex xl:flex-row flex-col-reverse justify-center ml-20 gap-10 overflow-hidden z-[99]">
+		<div
+			className="xl:mt-12 flex xl:flex-row flex-col-reverse justify-center ml-20 gap-10 overflow-hidden z-[99]"
+			id="contact">
 			<motion.div
 				variants={slideInFromLeft(0.2)}
 				className="flex-[0.75] bg-black-100 p-8 rounded-2xl">

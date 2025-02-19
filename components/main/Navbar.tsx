@@ -53,6 +53,11 @@ const Navbar = () => {
 							className="cursour-pointer transition duration-500 ease-in-out hover:scale-125">
 							Projects
 						</a>
+						<a
+							href="#contact"
+							className="cursour-pointer transition duration-500 ease-in-out hover:scale-125 ">
+							Contact
+						</a>
 					</div>
 				</div>
 
@@ -62,7 +67,6 @@ const Navbar = () => {
 							key={social.name}
 							href={social.link}
 							target="_blank"
-							rel="noopener noreferrer"
 							className="hover:opacity-80 transition-opacity duration-300">
 							<Image
 								src={social.src}

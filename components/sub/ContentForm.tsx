@@ -1,10 +1,9 @@
 "use client";
 
 import React, { useRef, ChangeEvent, FormEvent } from "react";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
-import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 // Define the form state type
@@ -37,12 +36,12 @@ const ContentForm = () => {
 	const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
 		setLoading(true);
+		console.log(form.email, form.message, form.name);
+		console.log(formRef.current);
 
-		const templateParams = {
-			from_name: form.name,
-			to_name: "Dundi Vignesh Gutti",
-			from_email: form.email,
-			to_email: "dundi@umich.edu",
+		const templateData = {
+			name: form.name,
+			email: form.email,
 			message: form.message,
 		};
 
@@ -50,12 +49,13 @@ const ContentForm = () => {
 			.sendForm(serviceId, templateId, formRef.current!, publicKey)
 			.then(() => {
 				setLoading(false);
-				window.alert("Email sent successfully!");
+				window.alert("Message sent successfully! I'll get back to you soon."); //
 				setForm({ name: "", email: "", message: "" }); // Reset form
 			})
 			.catch((error) => {
 				setLoading(false);
-				window.alert("Failed error occured");
+				window.alert("Failed to send message. Please try again later.");
+				console.error("Email sending error:", error);
 			});
 	};
 
